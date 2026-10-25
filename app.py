@@ -4,7 +4,7 @@ from database import init_db, get_all_memos, get_memo, create_memo, update_memo,
 app = Flask(__name__)
 app.json.ensure_ascii = False
 
-# アプリ起動時にDBを初期化
+# アプリ起動時にDBを初期化する
 init_db()
 @app.route("/")
 def index():
